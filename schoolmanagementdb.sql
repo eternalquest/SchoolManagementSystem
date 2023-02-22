@@ -57,13 +57,13 @@ CREATE TABLE `student_attendance` (
 
 
 CREATE TABLE `teacher_info` (
-  `t_id` int(10) unsigned NOT NULL auto_increment,
+  `t_id` int unsigned NOT NULL auto_increment,
   `t_name` varchar(405) NOT NULL,
   `t_email` varchar(400) NOT NULL,
   `gender` varchar(45) NOT NULL,
-  `phone_number` int(11) unsigned NOT NULL,
+  `phone_number` int unsigned NOT NULL,
   `address` varchar(500) NOT NULL,
-  `sub_id` int(10) unsigned NOT NULL,
+  `sub_id` int unsigned NOT NULL,
   `join_date` date NOT NULL,
   PRIMARY KEY  (`t_id`),
   KEY `FK_teacher_info_sub_id` (`sub_id`),
